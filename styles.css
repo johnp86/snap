@@ -18,3 +18,15 @@ html, body {
     background-color: blue;
     margin: 50px auto;
 }
+
+#trees {
+    margin-bottom: -40px;
+}
+
+.snap {
+    background-color: #444;
+}
+
+#path {
+    z-index:10;
+}

@@ -33,12 +33,52 @@ roadMarkings.attr({
 });
 
 // trees
-Snap.load("tree.svg", onSVGLoaded ) ;
+var trees = Snap.load("tree.svg", onSVGLoaded ) ;
 
 function onSVGLoaded( data ){ 
-    var trees = s.append( data );
-    trees.transform("t200,100");
+    s.append( data );
+    s.animate( animationTrees );
 }
+
+var sn = Snap('.snap'),
+
+path = sn.select('.path'),
+roadMove = roadMarking,
+treeMove = trees,
+animationRoad,
+animationTrees,
+animateAlongPath;
+
+animationRoad = function () {
+  roadMove.transform('t0,0');
+    animateAlongPath(path, roadMove, 0, 300, animationRoad);
+};
+animationTrees = function () {
+    animationTrees.transform('t0,0');
+    animateAlongPath(path, treeMove, 0, 300, animationTrees);
+
+};
+
+animateAlongPath = function (path, el, start, duration, easing, callback) {
+  var len = Snap.path.getTotalLength(path), 
+      elBB =  el.getBBox(),
+      elCenter = {
+        x: elBB.x + (elBB.width / 2),
+        y: elBB.y + (elBB.height / 2),
+      };
+
+    Snap
+      .animate(start, len, function (value) {
+      var movePoint = Snap.path.getPointAtLength(path, value);
+      el.transform('t'+ (movePoint.x - elCenter.x) + ',' + (movePoint.y - elCenter.y));
+    }, duration, easing, function () {
+      if (callback) callback(path);
+    });
+};
+
+animationRoad();
+animationTrees();
+
 
 // var trees = s.rect(0, 450, 600, 120);
 
