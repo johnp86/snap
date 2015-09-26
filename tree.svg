@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg id="trees" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 600 200" enable-background="new 0 0 600 200" xml:space="preserve">
-<g id="XMLID_26_">
-	<ellipse id="XMLID_31_" fill="#BB9150" cx="75.7" cy="188.8" rx="12.9" ry="3.1"/>
-	<polygon id="XMLID_30_" fill="#8DC17A" points="50,141.8 101.5,141.8 75.7,4.4 	"/>
-	<polygon id="XMLID_29_" fill="#76AF75" points="50,141.8 64.1,141.8 75.7,4.4 	"/>
-	<polygon id="XMLID_28_" fill="#B5D7A7" points="101.5,141.8 85.3,141.8 75.7,4.4 	"/>
-	<rect id="XMLID_27_" x="72.1" y="141.8" fill="#895B24" width="6.5" height="47.9"/>
-</g>
-<g id="XMLID_1_">
-	<ellipse id="XMLID_6_" fill="#BB9150" cx="298" cy="188.8" rx="12.9" ry="3.1"/>
-	<polygon id="XMLID_5_" fill="#8DC17A" points="272.2,141.8 323.8,141.8 298,4.4 	"/>
-	<polygon id="XMLID_4_" fill="#76AF75" points="272.2,141.8 286.3,141.8 298,4.4 	"/>
-	<polygon id="XMLID_3_" fill="#B5D7A7" points="323.8,141.8 307.6,141.8 298,4.4 	"/>
-	<rect id="XMLID_2_" x="294.3" y="141.8" fill="#895B24" width="6.5" height="47.9"/>
-</g>
-<g id="XMLID_7_">
-	<ellipse id="XMLID_12_" fill="#BB9150" cx="524.2" cy="190.9" rx="12.9" ry="3.1"/>
-	<polygon id="XMLID_11_" fill="#8DC17A" points="498.5,143.9 550,143.9 524.2,6.4 	"/>
-	<polygon id="XMLID_10_" fill="#76AF75" points="498.5,143.9 512.6,143.9 524.2,6.4 	"/>
-	<polygon id="XMLID_9_" fill="#B5D7A7" points="550,143.9 533.8,143.9 524.2,6.4 	"/>
-	<rect id="XMLID_8_" x="520.6" y="143.9" fill="#895B24" width="6.5" height="47.9"/>
+<g id="XMLID_13_">
+	<g id="XMLID_26_">
+		<ellipse id="XMLID_31_" fill="#BB9150" cx="75.7" cy="188.8" rx="12.9" ry="3.1"/>
+		<polygon id="XMLID_30_" fill="#8DC17A" points="50,141.8 101.5,141.8 75.7,4.4 		"/>
+		<polygon id="XMLID_29_" fill="#76AF75" points="50,141.8 64.1,141.8 75.7,4.4 		"/>
+		<polygon id="XMLID_28_" fill="#B5D7A7" points="101.5,141.8 85.3,141.8 75.7,4.4 		"/>
+		<rect id="XMLID_27_" x="72.1" y="141.8" fill="#895B24" width="6.5" height="47.9"/>
+	</g>
+	<g id="XMLID_1_">
+		<ellipse id="XMLID_6_" fill="#BB9150" cx="298" cy="188.8" rx="12.9" ry="3.1"/>
+		<polygon id="XMLID_5_" fill="#8DC17A" points="272.2,141.8 323.8,141.8 298,4.4 		"/>
+		<polygon id="XMLID_4_" fill="#76AF75" points="272.2,141.8 286.3,141.8 298,4.4 		"/>
+		<polygon id="XMLID_3_" fill="#B5D7A7" points="323.8,141.8 307.6,141.8 298,4.4 		"/>
+		<rect id="XMLID_2_" x="294.3" y="141.8" fill="#895B24" width="6.5" height="47.9"/>
+	</g>
+	<g id="XMLID_7_">
+		<ellipse id="XMLID_12_" fill="#BB9150" cx="524.2" cy="190.9" rx="12.9" ry="3.1"/>
+		<polygon id="XMLID_11_" fill="#8DC17A" points="498.5,143.9 550,143.9 524.2,6.4 		"/>
+		<polygon id="XMLID_10_" fill="#76AF75" points="498.5,143.9 512.6,143.9 524.2,6.4 		"/>
+		<polygon id="XMLID_9_" fill="#B5D7A7" points="550,143.9 533.8,143.9 524.2,6.4 		"/>
+		<rect id="XMLID_8_" x="520.6" y="143.9" fill="#895B24" width="6.5" height="47.9"/>
+	</g>
 </g>
 </svg>

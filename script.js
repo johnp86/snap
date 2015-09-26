@@ -32,30 +32,22 @@ roadMarkings.attr({
     fill: roadMarking
 });
 
-// trees
-var trees = Snap.load("tree.svg", onSVGLoaded ) ;
-
-function onSVGLoaded( data ){ 
-    s.append( data );
-    s.animate( animationTrees );
-}
-
 var sn = Snap('.snap'),
 
-path = sn.select('.path'),
+path = sn.select('.roadPath'),
 roadMove = roadMarking,
-treeMove = trees,
+treeMove = s.select('#XMLID_13_'),
 animationRoad,
 animationTrees,
 animateAlongPath;
 
 animationRoad = function () {
-  roadMove.transform('t0,0');
+    roadMove.transform('t0,0');
     animateAlongPath(path, roadMove, 0, 300, animationRoad);
 };
 animationTrees = function () {
-    animationTrees.transform('t0,0');
-    animateAlongPath(path, treeMove, 0, 300, animationTrees);
+    treeMove.transform('t0,-120');
+    animateAlongPath(path, treeMove, 0, 500, animationTrees);
 
 };
 
@@ -79,42 +71,3 @@ animateAlongPath = function (path, el, start, duration, easing, callback) {
 animationRoad();
 animationTrees();
 
-
-// var trees = s.rect(0, 450, 600, 120);
-
-/**
-  path is the path we wish with to animate along
-  element is the element we want to animate
-  start is the frame we wish to start the animation on
-  dur is the duration in milliseconds
-  callback is a function we wish to call once the animation has finished
-**/
-// animateAlongPath = function (path, element, start, dur, callback) {
-//   // Get the path length, so we know how many frames we will animate over
-//   var len = Snap.path.getTotalLength(path);
-
-//   roadMarkings.animate(start, len, function (value) {
-//     // movePoint gets the path attributes at a certain frame
-//     var movePoint = Snap.path.getPointAtLength(path, value);
-
-//     // applies the attributes to our element
-//     element.attr({ cx: movePoint.x, cy: movePoint.y });
-//   }, dur, mina.easeinout, function () {
-//     callback(path);
-//   });
-// };
-
-
-//animation
-// function animOn(){
-//     roadMarkings.animate({
-//       opacity: '1', 
-//     }, 1000, animOut);
-// }
-
-// function animOut() {
-//   roadMarkings.animate({
-//       opacity: '0.3',
-//    }, 1000, animOn);
-// };
-// animOn()
