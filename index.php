@@ -14,7 +14,7 @@
     </head>
     <!-- <body id="body" class="ride-good">
     <body id="body" class="ride-maybe"> -->
-    <body id="body" class="ride-bad">
+    <body id="body" class="ride-good">
         
         <svg id="svg">
 

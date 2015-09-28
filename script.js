@@ -18,7 +18,7 @@ var cloudy = "#a4b9bc";
 var cold = "#a9a9a9";
 
 // set main background color
-stage.style.backgroundColor = cold;
+stage.style.backgroundColor = hot;
 
 // trees
 // Snap.load("tree.svg", onSVGLoaded ) ;
@@ -47,8 +47,8 @@ grass.attr({
 });
 
 // rain
-var raining = s.rect(10,10,4,10).attr({fill:'#70ADDF'}).pattern(0,0,25,25).attr({patternTransform: 'rotate(45)'});
-var rainCont = s.rect(0,0,'100%','100%').attr({fill: raining});
+// var raining = s.rect(10,10,4,10).attr({fill:'#70ADDF'}).pattern(0,0,25,25).attr({patternTransform: 'rotate(45)'});
+// var rainCont = s.rect(0,0,'100%','100%').attr({fill: raining});
 
 // road
 var road = s.rect(0, 450, 600, 120);
@@ -83,6 +83,7 @@ animationTrees,
 animationHills,
 animateAlongPath;
 var clouds =  s.select('#clouds');
+clouds.remove();
 
 s.append(treeMove);
 s.append(scooter);
@@ -105,7 +106,7 @@ animationBuildings = function () {
 };
 animationClouds = function () {
     clouds.transform('t0,100');
-    animateAlongPath(path, clouds, 0, 10000, animationClouds);
+    animateAlongPath(path, clouds, 0, 26000, animationClouds);
 };
 animationRain = function () {
     raining.transform('t0,0');
@@ -128,17 +129,23 @@ animateAlongPath = function (path, el, start, duration, easing, callback) {
     });
 };
 
-animationRain();
+//animationRain();
 animationRoad();
 animationTrees();
 animationHills();
 animationBuildings();
-animationClouds();
+//animationClouds();
 
+
+// sun
+var sun = s.circle(420, 100, 80);
+    sun.attr({
+    fill: '#F7EB60'
+});
 
 //clouds to grey
-clouds.selectAll('ellipse').attr({fill: '#777'});
-clouds.selectAll('rect').attr({fill: '#777'});
+// clouds.selectAll('ellipse').attr({fill: '#777'});
+// clouds.selectAll('rect').attr({fill: '#777'});
 
 // scooter animation
 scooter.transform('t-800,0');
